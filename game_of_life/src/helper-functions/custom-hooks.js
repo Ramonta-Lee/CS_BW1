@@ -5,7 +5,7 @@ import {
   defaultGrid2,
   defaultGrid3,
   defaultGrid4,
-} from "../seed-data-strucutures/default-grids";
+} from "../seed-data-structures/seed-data.js";
 import getNeighbors from "./grid-neighbors";
 
 export const useInterval = (callback, delay, grid, clickable) => {
@@ -55,7 +55,7 @@ Sets the grid to be the random grid created
   /* First set a variable of ValidGrid to be False
  nextGeneration maps over the current grid, then checks for the current cell's neighbors.
  Then check for how many of the current cell's neighbors are alive.
- Based on how many are alive, return a cell either untouched, or we toggle its alive state, based on the rules passed inot the if statements.
+ Based on how many are alive, return a cell either untouched, or we toggle its alive state, based on the rules passed in to the if statements.
  If we were able to toggle a cell's alive state, we know the grid is valid.
  So, we increase the current generation count and set the grid to be nextGeneration.
  Else, return an alert to the user telling them the grid isn't valid
@@ -101,7 +101,7 @@ Sets the grid to be the random grid created
       if (cell.alive && (livingNeighbors === 2 || livingNeighbors === 3)) {
         return cell;
       }
-      if (cell.alive && (livingNeighbors < 2 || livingNeighbors >= 4)) {
+      if (cell.alive && (livingNeighbors < 2 || livingNeighbors > 3)) {
         ValidGrid = true;
         return { ...cell, alive: !cell.alive };
       }

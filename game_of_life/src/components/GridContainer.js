@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Grid from "./Grid.js";
-import DefaultGridsContainer from "./DefaultGrisContainer";
+import DefaultGridsContainer from "./DefaultGridsContainer";
 import Controls from "./Controls";
 import { useInterval, useGrid } from "../helper-functions/custom-hooks";
 
@@ -22,7 +22,7 @@ export default function GridContainer() {
     setGridSize,
   ] = useGrid();
 
-  useInterval(stepThroughAutomata, +speedInput || 500, grid, clickable);
+  useInterval(stepThroughAutomata, speedInput || 500, grid, clickable);
 
   return (
     <div className="grid_container">

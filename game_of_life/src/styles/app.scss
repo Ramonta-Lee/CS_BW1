@@ -1,0 +1,27 @@
+.app_container {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.title_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: radial-gradient(circle at 140% 20%,#6c9de2 0,#79adff 21.66%,#3560d0 65%,#0038a5 85.5%,#003498 100%);
+  box-shadow: 4px 5px 1px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 25px;
+    color: white;
+    margin-bottom: 25px;
+  }
+}
+
+.mid_section_container {
+  display: flex;
+  margin-top: 70px;
+  width: 80%;
+  margin: 0 auto;
+}

@@ -1,17 +1,18 @@
-import React from 'react';
-import GridContainer from './components/GridContainer.js';
-import './App.css';
-import Title from './components/Title';
-import { Grid } from 'semantic-ui-react';
+import React from "react";
+import GridContainer from "./components/GridContainer.js";
+import RulesContainer from "./components/RulesContainer.js";
+import Title from "./components/Title";
+import About from "./components/About.js";
 
 function App() {
   return (
-    <div className="App">
-        <Title />
-      <header className="App-header">
-        <Grid />
-        <p>WTF!</p>
-      </header>
+    <div className="app_container">
+      <Title />
+      <div className="mid_section_container">
+        <GridContainer />
+        <RulesContainer />
+      </div>
+      <About />
     </div>
   );
 }
