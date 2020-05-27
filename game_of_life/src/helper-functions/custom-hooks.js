@@ -11,11 +11,13 @@ import getNeighbors from "./grid-neighbors";
 
 export const useInterval = (callback, delay, grid, clickable) => {
   const savedCallback = useRef();
+  // Remember the latest callback
 
   useEffect(() => {
     savedCallback.current = callback;
   }, [callback]);
 
+  // Set up the interval
   useEffect(() => {
     if (!clickable) {
       function tick() {

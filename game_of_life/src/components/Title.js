@@ -1,11 +1,11 @@
 import React from 'react';
-import {Header} from 'semantic-ui-react';
+// import {Header} from 'semantic-ui-react';
 
-export default () => (
- <Header as='h2' icon inverted textAlign='center' className='title'>
-  Game of Life
-   <Header.Subheader>
-    Cellular automation invented by John Conway
-   </Header.Subheader>
- </Header>
-);
+export default function Title() { 
+
+  return(
+    <div className="title_container">
+      <h1>Conway's Game of Life</h1>
+    </div>
+  )
+  }
