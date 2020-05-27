@@ -54,4 +54,5 @@ export const cellDisplay = (alive, gridSize) => {
       border: '.1px solid white'
     };
   }
+
 };

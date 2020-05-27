@@ -133,13 +133,13 @@ Sets the grid to be the random grid created
     const row = e.target.dataset.row;
     const id = e.target.dataset.id;
     const newGrid = grid.map((cell) => {
-      if (cell.id === id) {
+      if (cell.id === +id) {
         return {
-          column: column,
-          row: row,
+          column: +column,
+          row: +row,
           alive: !cell.alive,
           clickable: true,
-          id: id,
+          id: +id,
         };
       } else {
         return cell;
