@@ -5,6 +5,7 @@ import {
   defaultGrid2,
   defaultGrid3,
   defaultGrid4,
+  Glider,
 } from "../seed-data-structures/seed-data.js";
 import getNeighbors from "./grid-neighbors";
 
@@ -170,6 +171,12 @@ Sets the grid to be the random grid created
       case "Default Grid 3":
         setGridSize(15);
         setGrid(defaultGrid4);
+        setGeneration(0);
+        break;
+        // trying to implement glider
+      case "Glider":
+        setGridSize(15);
+        setGrid(Glider);
         setGeneration(0);
         break;
       default:

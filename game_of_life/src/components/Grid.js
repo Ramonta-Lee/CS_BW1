@@ -17,7 +17,6 @@ export default function Grid({ grid, toggleLife, clickable, gridSize }) {
           />
           );
         })}
-        {console.log(grid)}
     </div>
   );
 }
