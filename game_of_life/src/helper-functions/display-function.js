@@ -1,4 +1,5 @@
 export const gridDisplay = (gridSize) => {
+  // Dynamic rendering of the grid/scale
   if (gridSize === 15) {
     return {
       display: "grid",
@@ -23,6 +24,7 @@ export const gridDisplay = (gridSize) => {
 };
 
 const cellSize = (gridSize) => {
+  // Dynamic rendering of the cell/size
   if (gridSize === 15) {
     return "20px";
   }
@@ -35,6 +37,7 @@ const cellSize = (gridSize) => {
 };
 
 export const cellDisplay = (alive, gridSize) => {
+  // Random color generator
   const ranColorNum1 = Math.floor(Math.random() * Math.floor(255));
   const ranColorNum2 = Math.floor(Math.random() * Math.floor(255));
   const ranColorNum3 = Math.floor(Math.random() * Math.floor(255));
@@ -44,15 +47,15 @@ export const cellDisplay = (alive, gridSize) => {
       width: `${cellSize(gridSize)}`,
       height: `${cellSize(gridSize)}`,
       background: `rgb(${ranColorNum1}, ${ranColorNum2}, ${ranColorNum3})`,
-      border: '.1px solid white',
+      //  can turn these on or off
+      border: ".1px solid white",
     };
   } else {
     return {
       width: `${cellSize(gridSize)}`,
       height: `${cellSize(gridSize)}`,
       background: "black",
-      border: '.1px solid white'
+      border: ".1px solid white",
     };
   }
-
 };

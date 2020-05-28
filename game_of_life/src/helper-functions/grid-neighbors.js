@@ -10,7 +10,7 @@
 
     if (SIZE < 9)
       return new Error(
-        `grid-neighbors: Minimum grid size is 9 cells. Provided gris is ${SIZE} cells.`
+        `grid-neighbors: Minimum grid size is 9 cells. Provided grid is ${SIZE} cells.`
       );
     if (cell >= SIZE)
       return new Error(
