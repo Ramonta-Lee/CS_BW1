@@ -1,11 +1,11 @@
 import React from "react";
 
 export default function RulesContainer() {
-  console.log("re-renders");
-
   return (
     <div className="rules_container">
-      <h1 style={{textDecoration: "underline"}}>Rules of the Game:</h1>
+      <h1 class="glow" style={{ textDecoration: "underline" }}>
+        Rules of the Game:
+      </h1>
       <p>
         The universe of the Game of Life is an infinite, two-dimensional
         orthogonal grid of square cells, each of which is in one of two possible
@@ -14,7 +14,7 @@ export default function RulesContainer() {
         are horizontally, vertically, or diagonally adjacent. At each step in
         time, the following transitions occur:
       </p>
-      <ul>
+      <ol>
         <li>
           Any live cell with fewer than two live neighbors dies, as if by
           underpopulation.
@@ -31,7 +31,7 @@ export default function RulesContainer() {
           Any dead cell with three live neighbors becomes a live cell, as if by
           reproduction.
         </li>
-      </ul>
+      </ol>
       <p>
         The initial pattern constitutes the seed of the system. The first
         generation is created by applying the above rules simultaneously to

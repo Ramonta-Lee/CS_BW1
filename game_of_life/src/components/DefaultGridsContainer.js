@@ -32,12 +32,9 @@ export default memo(function DefaultGridsContainer({
 
       {/* trying to incorporate a glider */}
       {/* TODO */}
-      <button
-        value="Glider"
-        onClick={clickable ? setDefaultGrid : null}
-      >
+      <button value="Glider" onClick={clickable ? setDefaultGrid : null}>
         Glider
-      </button> 
+      </button>
       {/* end */}
 
       <button

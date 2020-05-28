@@ -3,6 +3,17 @@
   height: 100%;
 }
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-image: url(https://images.unsplash.com/photo-1574056067299-a11c5b576e69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .title_container {
   display: flex;
   justify-content: center;
@@ -24,4 +35,5 @@
   margin-top: 70px;
   width: 80%;
   margin: 0 auto;
+  
 }
