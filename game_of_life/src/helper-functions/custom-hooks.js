@@ -32,6 +32,7 @@ export const useInterval = (callback, delay, grid, clickable) => {
 };
 
 export const useGrid = () => {
+  // logic holding the state of what a grid looks like at an individual generation
   const [grid, setGrid] = useState(defaultGrid1);
   const [generation, setGeneration] = useState(0);
   const [clickable, setClickable] = useState(true);
@@ -74,8 +75,11 @@ Sets the grid to be the random grid created
     // neighbors[5] = south west neighbor
     // neighbors[6] = south neighbor
     // neighbors[7] = south east neighbor
+
     const nextGeneration = grid.map((cell, i) => {
       let neighbors = getNeighbors(i, gridSize, gridSize);
+
+      // count of living neighbors per grid-cell
       let livingNeighbors = 0;
       if (grid[neighbors[0]].alive) {
         livingNeighbors += 1;
@@ -101,6 +105,9 @@ Sets the grid to be the random grid created
       if (grid[neighbors[7]].alive) {
         livingNeighbors += 1;
       }
+
+      // check total of living neighbors against the rules
+      // set validGrid to true
       if (cell.alive && (livingNeighbors === 2 || livingNeighbors === 3)) {
         return cell;
       }

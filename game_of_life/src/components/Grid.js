@@ -5,6 +5,7 @@ export default function Grid({ grid, toggleLife, clickable, gridSize }) {
 
   return (
     <div className="grid" style={gridDisplay(gridSize)}>
+      {/* inline styling allows for dynamic rendering of the grid and the cells */}
       {grid.map((cell, i) => {
 
         return (
