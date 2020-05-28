@@ -1,2 +1,2 @@
 # CS_BW1
-CS Build Week 1; Conway's Game of Life
+CS Unit 1; Build Week 1; Conway's Game of Life
