@@ -15,19 +15,20 @@
   }
 
   ul {
-    list-style-type: circle;
     margin-top: 1em;
     margin-bottom: 1 em;
     margin-left: 0;
     margin-right: 0;
     padding-left: 40px;
-
+    
     span {
       font-weight: bolder;
     }
-
+    
     li {
       margin-bottom: 10px;
+      list-style-type: circle;
+      
     }
   }
 }
