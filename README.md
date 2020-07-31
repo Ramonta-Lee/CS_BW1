@@ -1,2 +1,4 @@
-# CS_BW1
-CS Unit 1; Build Week 1; Conway's Game of Life
+Conway's Game of Life
+Customizable patterns and speed
+Exploration into automata
+Retro design
